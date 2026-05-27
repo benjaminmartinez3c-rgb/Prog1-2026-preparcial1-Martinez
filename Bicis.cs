@@ -4,9 +4,14 @@ public class Bicis : Vehiculos
 {
     public int CantCambios {get;set;}
 
-public Bici(string patente, string marca, string modelo, int anioFabricacion, decimal precioBaseDiario, int cantCambios) : base(patente, marca, modelo, anioFabricacion, precioBaseDiario)
+    public Bici(string patente, string marca, string modelo, int anioFabricacion, decimal precioBaseDiario, int cantCambios) : base(patente, marca, modelo, anioFabricacion, precioBaseDiario)
     {
         CantCambios = cantCambios;
+    }
+
+    public override decimal CalcularCosto(int dias)
+    {
+        return 200m * dias;
     }
 
 }
