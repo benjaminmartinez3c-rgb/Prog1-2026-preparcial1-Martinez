@@ -28,4 +28,6 @@ public class Vehiculos
         AnioFabricacion = anioFabricacion;
         PrecioBaseDiario = precioBaseDiario;
     }
+
+    public abstract decimal CalcularCosto(int dias);
 }
