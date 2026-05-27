@@ -1,6 +1,6 @@
 ﻿namespace Negocio;
 
-public class Autos : Vehiculos
+public class Auto : Vehiculo
 {
 public bool Seguro { get; set; }
 

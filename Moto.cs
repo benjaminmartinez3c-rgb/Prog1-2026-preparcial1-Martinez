@@ -7,9 +7,11 @@ public enum CategoriaMoto
     Todoterreno
 }
 
-public class Motos : Vehiculos
+public class Moto : Vehiculo
 {
+
 public CategoriaMoto Categoria { get; set; }  
+
 public Moto(string patente, string marca, string modelo, int anioFabricacion, decimal precioBaseDiario,CategoriaMoto categoria) : base(patente, marca, modelo, anioFabricacion, precioBaseDiario)
     {
         Categoria = categoria;

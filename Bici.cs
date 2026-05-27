@@ -1,6 +1,6 @@
 ﻿namespace Negocio;
 
-public class Bicis : Vehiculos
+public class Bici : Vehiculo
 {
     public int CantCambios {get;set;}
 
